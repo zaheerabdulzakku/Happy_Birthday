@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+{% load static  %}
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtua - New Amazing HTML5 Template</title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
+        <meta charset="UTF-8">
+        <title>Happy Birthday</title>
+        <style>
+
+		* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+            /* If you can't see it just hit space in here*/
+            body {
+                font-family:'Wendy One', sans-serif;
+            }
+
+			body {
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+  background-image: -webkit-radial-gradient(#374566, #010203);
+  background-image: -moz-radial-gradient(#374566, #010203);
+  background-image: -o-radial-gradient(#374566, #010203);
+  background-image: radial-gradient(#374566, #010203);
+}
+            span {
+                text-transform: uppercase;
+            }
+            .container {
+                width: 800px;
+                height: 420px;
+                padding: 10px;
+                margin: 0 auto;
+                position: relative;
+            }
+            .balloon {
+                width: 738px;
+                margin: 0 auto;
+                padding-top: 30px;
+                position: relative;
+            }
+            .balloon > div {
+                width: 104px;
+                height: 140px;
+                background: rgba(182, 15, 97, 0.9);
+                border-radius: 0;
+                border-radius: 80% 80% 80% 80%;
+                margin: 0 auto;
+                position: absolute;
+                padding: 10px;
+                box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+                -webkit-transform-origin: bottom center;
+            }
+            .balloon > div:nth-child(1) {
+                background: rgba(182, 15, 97, 0.9);
+                left: 0;
+                box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+                -webkit-animation: balloon1 6s ease-in-out infinite;
+                -moz-animation: balloon1 6s ease-in-out infinite;
+                -o-animation: balloon1 6s ease-in-out infinite;
+                animation: balloon1 6s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(1):before {
+                color: rgba(182, 15, 97, 0.9);
+            }
+            .balloon > div:nth-child(2) {
+                background: rgba(242, 112, 45, 0.9);
+                left: 120px;
+                box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+                -webkit-animation: balloon2 6s ease-in-out infinite;
+                -moz-animation: balloon2 6s ease-in-out infinite;
+                -o-animation: balloon2 6s ease-in-out infinite;
+                animation: balloon2 6s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(2):before {
+                color: rgba(242, 112, 45, 0.9);
+            }
+            .balloon > div:nth-child(3) {
+                background: rgba(45, 181, 167, 0.9);
+                left: 240px;
+                box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+                -webkit-animation: balloon4 6s ease-in-out infinite;
+                -moz-animation: balloon4 6s ease-in-out infinite;
+                -o-animation: balloon4 6s ease-in-out infinite;
+                animation: balloon4 6s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(3):before {
+                color: rgba(45, 181, 167, 0.9);
+            }
+            .balloon > div:nth-child(4) {
+                background: rgba(190, 61, 244, 0.9);
+                left: 360px;
+                box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+                -webkit-animation: balloon1 5s ease-in-out infinite;
+                -moz-animation: balloon1 5s ease-in-out infinite;
+                -o-animation: balloon1 5s ease-in-out infinite;
+                animation: balloon1 5s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(4):before {
+                color: rgba(190, 61, 244, 0.9);
+            }
+            .balloon > div:nth-child(5) {
+                background: rgba(180, 224, 67, 0.9);
+                left: 480px;
+                box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+                -webkit-animation: balloon3 5s ease-in-out infinite;
+                -moz-animation: balloon3 5s ease-in-out infinite;
+                -o-animation: balloon3 5s ease-in-out infinite;
+                animation: balloon3 5s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(5):before {
+                color: rgba(180, 224, 67, 0.9);
+            }
+            .balloon > div:nth-child(6) {
+                background: rgba(242, 194, 58, 0.9);
+                left: 600px;
+                box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+                -webkit-animation: balloon2 3s ease-in-out infinite;
+                -moz-animation: balloon2 3s ease-in-out infinite;
+                -o-animation: balloon2 3s ease-in-out infinite;
+                animation: balloon2 3s ease-in-out infinite;
+            }
+            .balloon > div:nth-child(6):before {
+                color: rgba(242, 194, 58, 0.9);
+            }
+            .balloon > div:before {
+                color: rgba(182, 15, 97, 0.9);
+                position: absolute;
+                bottom: -11px;
+                left: 52px;
+                content:"▲";
+                font-size: 1em;
+            }
+            span {
+                font-size: 4.8em;
+                color: white;
+                position: relative;
+                top: 30px;
+                left: 50%;
+                margin-left: -27px;
+            }
+            /*BALLOON 1 4*/
+            @-webkit-keyframes balloon1 {
+                0%, 100% {
+                    -webkit-transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    -webkit-transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            @-moz-keyframes balloon1 {
+                0%, 100% {
+                    -moz-transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    -moz-transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            @-o-keyframes balloon1 {
+                0%, 100% {
+                    -o-transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    -o-transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            @keyframes balloon1 {
+                0%, 100% {
+                    transform: translateY(0) rotate(-6deg);
+                }
+                50% {
+                    transform: translateY(-20px) rotate(8deg);
+                }
+            }
+            /* BAllOON 2 5*/
+            @-webkit-keyframes balloon2 {
+                0%, 100% {
+                    -webkit-transform: translateY(0) rotate(6eg);
+                }
+                50% {
+                    -webkit-transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            @-moz-keyframes balloon2 {
+                0%, 100% {
+                    -moz-transform: translateY(0) rotate(6deg);
+                }
+                50% {
+                    -moz-transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            @-o-keyframes balloon2 {
+                0%, 100% {
+                    -o-transform: translateY(0) rotate(6deg);
+                }
+                50% {
+                    -o-transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            @keyframes balloon2 {
+                0%, 100% {
+                    transform: translateY(0) rotate(6deg);
+                }
+                50% {
+                    transform: translateY(-30px) rotate(-8deg);
+                }
+            }
+            /* BAllOON 0*/
+            @-webkit-keyframes balloon3 {
+                0%, 100% {
+                    -webkit-transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            @-moz-keyframes balloon3 {
+                0%, 100% {
+                    -moz-transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    -moz-transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            @-o-keyframes balloon3 {
+                0%, 100% {
+                    -o-transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    -o-transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            @keyframes balloon3 {
+                0%, 100% {
+                    transform: translate(0, -10px) rotate(6eg);
+                }
+                50% {
+                    transform: translate(-20px, 30px) rotate(-8deg);
+                }
+            }
+            /* BAllOON 3*/
+            @-webkit-keyframes balloon4 {
+                0%, 100% {
+                    -webkit-transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    -webkit-transform: translate(-15px, 20px) rotate(10deg);
+                }
+            }
+            @-moz-keyframes balloon4 {
+                0%, 100% {
+                    -moz-transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    -moz-transform: translate(-15px, 10px) rotate(10deg);
+                }
+            }
+            @-o-keyframes balloon4 {
+                0%, 100% {
+                    -o-transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    -o-transform: translate(-15px, 10px) rotate(10deg);
+                }
+            }
+            @keyframes balloon4 {
+                0%, 100% {
+                    transform: translate(10px, -10px) rotate(-8eg);
+                }
+                50% {
+                    transform: translate(-15px, 10px) rotate(10deg);
+                }
+            }
+            h1 {
+                position: relative;
+                top: 200px;
+                text-align: center;
+                color: white;
+                font-size: 3.5em;
+            }
+        </style>
+        <script>
+            window.open = function() {};
+            window.print = function() {};
+            // Support hover state for mobile.
+            if (false) {
+                window.ontouchstart = function() {};
+            }
+        </script>
+        <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+        <meta content="clickberry-extension-here">
+        <meta content="clickberry-extension-here">
+        <style type="text/css"></style>
+        <style type="text/css"></style>
+    <style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here">
+  </head>-
+
+  <body class="size-1280">
+    <!-- MAIN -->
+
+        <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+        <div class="container">
+            <div class="balloon">
+                <div><span>☺</span>
+                </div>
+                <div><span>B</span>
+                </div>
+                <div><span>D</span>
+                </div>
+                <div><span>A</span>
+                </div>
+                <div><span>Y</span>
+                </div>
+                <div><span>!</span>
+                </div>
+            </div>
+             <h1>Ashwin</h1>
+
+        </div>
+
+
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 37</div>
+  <img src="{% static '1.jpg' %}" style="width:50%">
+  <!-- <div class="text">Caption Text</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 37</div>
+  <img src="{% static '2.jpg' %}" style="width:50%">
+  <!-- <div class="text">Caption Two</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 37</div>
+  <img src="{% static '3.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 37</div>
+  <img src="{% static '4.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 37</div>
+  <img src="{% static '5.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 37</div>
+  <img src="{% static '6.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 37</div>
+  <img src="{% static '7.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 37</div>
+  <img src="{% static '8.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 37</div>
+  <img src="{% static '9.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 37</div>
+  <img src="{% static '10.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 37</div>
+  <img src="{% static '11.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 37</div>
+  <img src="{% static '12.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 37</div>
+  <img src="{% static '13.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 37</div>
+  <img src="{% static '14.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">15 / 37</div>
+  <img src="{% static '15.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">16 / 37</div>
+  <img src="{% static '16.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">17 / 37</div>
+  <img src="{% static '17.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">18 / 37</div>
+  <img src="{% static '18.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">19 / 37</div>
+  <img src="{% static '19.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">20 / 37</div>
+  <img src="{% static '20.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">21 / 37</div>
+  <img src="{% static '21.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">22 / 37</div>
+  <img src="{% static '22.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">23 / 37</div>
+  <img src="{% static '23.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">24 / 37</div>
+  <img src="{% static '24.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">25 / 37</div>
+  <img src="{% static '25.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">26 / 37</div>
+  <img src="{% static '26.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">27 / 37</div>
+  <img src="{% static '27.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">28 / 37</div>
+  <img src="{% static '28.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">29 / 37</div>
+  <img src="{% static '29.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">30 / 37</div>
+  <img src="{% static '30.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">31 / 37</div>
+  <img src="{% static '31.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">32 / 37</div>
+  <img src="{% static '32.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">33 / 37</div>
+  <img src="{% static '33.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">34 / 37</div>
+  <img src="{% static '34.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">35 / 37</div>
+  <img src="{% static '35.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">36 / 37</div>
+  <img src="{% static '36.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">37 / 37</div>
+  <img src="{% static '37.jpg' %}" style="width:50%">
+ <!--  <div class="text">Caption Three</div> -->
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+        <script>
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+        </script>
+        <script>
+            if (document.location.search.match(/type=embed/gi)) {
+                window.parent.postMessage('resize', "*");
+            }
+        </script>
+
+    <!-- FOOTER -->
+    <script type="text/javascript" src="js/responsee.js"></script>
+    <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/template-scripts.js"></script>
+  </body>
+</html>
